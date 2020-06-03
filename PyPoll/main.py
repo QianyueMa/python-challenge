@@ -21,7 +21,6 @@ with open(csvpath) as csvfile:
     reader = csv.reader(csvfile)
     csv_header = next(reader)
 
-    #num_votes = 0
     potential_candidates = ["Khan", "Correy", "Li", "O'Tooley"]
     Khan_votes = 0
     Correy_votes = 0
@@ -30,7 +29,6 @@ with open(csvpath) as csvfile:
 
 
     for i in open(csvpath):
-        #the_candidate = row[2]
         if i == "Khan":
             Khan_votes = Khan_votes + 1
         elif i == "Correy":
